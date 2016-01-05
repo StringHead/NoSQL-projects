@@ -3,14 +3,14 @@
 ---
 ### Specyfikacja komputera użytego do obliczeń:
 
-| **COMPUTER**        | **SPECIFICATION**                              |
+| **COMPUTER**        |                                                |
 |:-------------------:|------------------------------------------------|
 | **Full name**       | Inspiron 7520 15R SE                           |
 | **Manufacturer**    | Dell Inc.                                      |
 | **Type**            | Laptop                                         |
 
 
-| **HARDWARE**        | **SPECIFICATION**                              |
+| **HARDWARE**        |                                                |
 |:-------------------:|------------------------------------------------|
 | **CPU name**        | Intel Core i7-3632QM                           |
 | **CPU spec.**       | Intel Core i7-3632QM PCU @ 2.20 GHz (4 cores)  |
