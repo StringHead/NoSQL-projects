@@ -31,4 +31,4 @@
 
 
 ##GEOJSON
-(geojson)[map(geojson.io).geojson]
+[geojson](map(geojson.io).geojson)
