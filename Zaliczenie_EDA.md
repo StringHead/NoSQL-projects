@@ -26,3 +26,9 @@
   * pobranie MongoDB przy użyciu polecenia *wget*
 2.	Pobranie zbioru danych (dataset) [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB) ze strony [grouplens.org](http://grouplens.org/datasets/movielens/)
 2.	
+
+
+
+
+##GEOJSON
+(geojson)[map(geojson.io).geojson]
