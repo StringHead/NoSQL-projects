@@ -1,0 +1,3 @@
+> db.movies.count( { genres: {$all: ["Sci-Fi"] } } )
+153
+>

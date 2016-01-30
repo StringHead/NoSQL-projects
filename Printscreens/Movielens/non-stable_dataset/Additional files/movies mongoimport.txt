@@ -1,0 +1,8 @@
+stringhead@ubuntu-vbox:~/mongodb-dataset/ml-latest$ time mongoimport -d movielens -c movies --type csv --headerline --file ./movies.csv
+2016-01-24T13:30:22.763+0100	connected to: localhost
+2016-01-24T13:30:23.487+0100	imported 33869 documents
+
+real	0m0.759s
+user	0m0.372s
+sys	0m0.184s
+stringhead@ubuntu-vbox:~/mongodb-dataset/ml-latest$

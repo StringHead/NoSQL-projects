@@ -1,0 +1,84 @@
+> db.movies.find({ title: "Star Wars Episode VI" },{_id: 1})	// no result
+> db.movies.find({ title: /Star Wars/ }).pretty()
+{
+	"_id" : ObjectId("56a4c3def90cf5f4fbff6f0d"),
+	"movieId" : 260,
+	"title" : "Star Wars: Episode IV - A New Hope (1977)",
+	"genres" : "Action|Adventure|Sci-Fi"
+}
+{
+	"_id" : ObjectId("56a4c3def90cf5f4fbff72a0"),
+	"movieId" : 1196,
+	"title" : "Star Wars: Episode V - The Empire Strikes Back (1980)",
+	"genres" : "Action|Adventure|Sci-Fi"
+}
+{
+	"_id" : ObjectId("56a4c3def90cf5f4fbff72ad"),
+	"movieId" : 1210,
+	"title" : "Star Wars: Episode VI - Return of the Jedi (1983)",
+	"genres" : "Action|Adventure|Sci-Fi"
+}
+{
+	"_id" : ObjectId("56a4c3def90cf5f4fbff77fd"),
+	"movieId" : 2628,
+	"title" : "Star Wars: Episode I - The Phantom Menace (1999)",
+	"genres" : "Action|Adventure|Sci-Fi"
+}
+{
+	"_id" : ObjectId("56a4c3def90cf5f4fbff82af"),
+	"movieId" : 5378,
+	"title" : "Star Wars: Episode II - Attack of the Clones (2002)",
+	"genres" : "Action|Adventure|Sci-Fi|IMAX"
+}
+{
+	"_id" : ObjectId("56a4c3dff90cf5f4fbff9597"),
+	"movieId" : 33493,
+	"title" : "Star Wars: Episode III - Revenge of the Sith (2005)",
+	"genres" : "Action|Adventure|Sci-Fi"
+}
+{
+	"_id" : ObjectId("56a4c3dff90cf5f4fbffa09c"),
+	"movieId" : 61160,
+	"title" : "Star Wars: The Clone Wars (2008)",
+	"genres" : "Action|Adventure|Animation|Sci-Fi"
+}
+{
+	"_id" : ObjectId("56a4c3dff90cf5f4fbffaaba"),
+	"movieId" : 79006,
+	"title" : "Empire of Dreams: The Story of the 'Star Wars' Trilogy (2004)",
+	"genres" : "Documentary"
+}
+{
+	"_id" : ObjectId("56a4c3dff90cf5f4fbffbdf3"),
+	"movieId" : 100089,
+	"title" : "Star Wars Uncut: Director's Cut (2012)",
+	"genres" : "Action|Animation|Comedy|Sci-Fi|Western"
+}
+{
+	"_id" : ObjectId("56a4c3dff90cf5f4fbffc847"),
+	"movieId" : 109713,
+	"title" : "Star Wars: Threads of Destiny (2014)",
+	"genres" : "Action|Adventure|Sci-Fi"
+}
+{
+	"_id" : ObjectId("56a4c3dff90cf5f4fbffd562"),
+	"movieId" : 
+,
+	"title" : "Star Wars: Episode VII - The Force Awakens (2015)",
+	"genres" : "Action|Adventure|Fantasy|Sci-Fi"
+}
+{
+	"_id" : ObjectId("56a4c3dff90cf5f4fbffe16f"),
+	"movieId" : 135216,
+	"title" : "The Star Wars Holiday Special (1978)",
+	"genres" : "Adventure|Children|Comedy|Sci-Fi"
+}
+{
+	"_id" : ObjectId("56a4c3dff90cf5f4fbffe311"),
+	"movieId" : 136485,
+	"title" : "Robot Chicken: Star Wars (2007)",
+	"genres" : "Animation|Comedy|Sci-Fi"
+}
+> db.movies.find({ title: "Star Wars: Episode VI - Return of the Jedi (1983)" },{_id: 1})
+{ "_id" : ObjectId("56a4c3def90cf5f4fbff72ad") }
+> 
