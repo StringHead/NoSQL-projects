@@ -76,6 +76,33 @@
   ```
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/2b_mongoimport_done%20movies_ratings.PNG "mongoimport_done_movies_ratings")
 
+3. Uruchomienie mongo...
+
+  * Pierwsze, podstawowe komendy
+
+  ```sh
+  # Wyświetlenie dostępnych baz danych
+  > show dbs
+
+  # Wybranie bazy danych "movielens" i wyświetlenie jej kolekcji
+  > use movielens
+  > show collections
+
+  # Wyświetlenie przykładowego dokumentu ze wszystkich 3 kolekcji
+  > db.movies.findOne()
+  > db.movies_ratings.findOne()
+  > db.movies_tags.findOne()
+
+  # Zliczenie wszystkich rekordów
+  > db.movies.count()
+  > db.movies_ratings.count()
+  > db.movies_tags.count()
+
+  ```
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/3_mongo_showDbs_useDb_showCollections.PNG "mongo_showDbs_useDb_showCollections")
+
+  * Jak widać, struktura powyższych kolekcji nie jest zbyt rozbudowana. Dodatkowo jesteśmy zmuszeni do operowania na 3 oddzielnych kolekcjach, zamiast na jednej (jak to jest właśnie w przypadku zbioru danych *Reddit comments* - przedstawię go w dalszej części niniejszej dokumentacji). Wydaje się, że jedym z rozwiązań mogłoby się okazać użycie funkcji **mapReduce**, dostępnej w mongoDB, dzięki której możliwe jest złączenie dokumentów z kilku kolekcji w jedną, nową. Ciekawy opis tej procedury, wraz z przykładem użycia i objaśnieniem, czym jest mapReduce, znalazłem na stronie [www.noppanit.com](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/). Ostatecznie postanowiłem jedynie zapoznać się z tą metodą, a jej wykorzystaniem zajmę się - mam nadzieję - przy innej okazji :).
+
 
 
 
