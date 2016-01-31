@@ -24,6 +24,7 @@
 
 1.	Pobranie i instalacja MongoDB na systemie wirtualnym **Linux Ubuntu** (*Guest*):
 ```sh
+//UŻYTE KOMENDY:
 $ time wget https: //fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tgz
 $ time zgip -d mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tgz
 $ time tar -xvf mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tar
