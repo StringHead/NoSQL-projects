@@ -32,7 +32,7 @@
   $ time zgip -d mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tgz
   $ time tar -xvf mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tar
   ```
-  ![alt text](D:\StringHead\UG Informatyka\ROK III\NoSQL\EDA\Printscreens\Reddit\OLD\MongoDB download and unzip.PNG "MongoDB - download_and_unzip")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/MongoDB%20download%20and%20unzip.PNG "MongoDB - download_and_unzip")
 
   ```sh
   # Ustawienie ścieżki systemowej:
@@ -43,11 +43,35 @@
   <hr />
 
 2.	Pobranie zbioru danych:  
-  * Na samym początku postanowiłem użyć paczki **MovieLens data** - [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB) ze strony [www.grouplens.org](http://grouplens.org/datasets/movielens/). Ten zbiór okazał się jednak dla mnie zbyt skromny i ujednolicony jeśli chodzi o rodzaj danych, aby móc dokonać na nim zróżnicowanych operacji. Postanowiłem jednak udokumentować wykonaną przez siebie pracę na tym zbiorze.
+  * Na samym początku postanowiłem użyć paczki **MovieLens data** - [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB) ze strony [www.grouplens.org](http://grouplens.org/datasets/movielens/). Niestety ten zestaw okazał się dla mnie zbyt skromny i ujednolicony jeśli chodzi o rodzaj danych, aby móc dokonać na nim zróżnicowanych operacji. Postanowiłem jednak udokumentować wykonaną przez siebie pracę na tym zbiorze.
   * W drugiej kolejności skorzystałem ze zbioru danych **Reddit comments** - [reddit-torrent](https://mega.nz/#!ysBWXRqK!yPXLr25PgJi184pbJU3GtnqUY4wG7YvuPpxJjEmnb9A), udostępnionego na stronie [www.reddit.com](https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment).
 
+  <hr />
 
-## 1. *MovieLens* dataset
+## **MovieLens** dataset
+
+1. Pobranie i rozpakowanie zbioru danych
+  ```sh
+  # Rozpakowanie zbioru danych
+  $ time unzip ml-latest.zip -d /home/stringhead/mongodb-dataset/
+
+  # Sprawdzenie zawartości
+  $ ls -l
+  ```
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/1_unzip_ls_dataset.PNG "unzip_ls_dataset")
+
+2. Zaimportowanie zbiorów danych do mongo:
+  * Postanowiłem zaimportować 3 z 4 plików widocznych w punkcie 1: *movies.csv* (1.7 MB), *tags.csv* (20.9 MB), oraz mający najwięszky rozmiar *ratings.csv* (617,1 MB). Poniżej przykład zaimportowania właśnie tego ostatnie zbioru.
+  ```sh
+  # dataset import
+  $ time mongoimport -d movielens -c movies_rating --type csv --headerline --file ./ratings.csv
+  ```
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/1_unzip_ls_dataset.PNG "unzip_ls_dataset")
+
+
+
+
+
 
 ##GEOJSON
 [geojson](map(geojson.io).geojson)
