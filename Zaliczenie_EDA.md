@@ -40,7 +40,7 @@
   ```
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/MongoDB%20set%20PATH.PNG "MongoDB -setPath")
 
-<hr />
+  <hr />
 
 2.	Pobranie zbioru danych:  
   * Na samym początku postanowiłem użyć paczki **MovieLens data** - [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB) ze strony [www.grouplens.org](http://grouplens.org/datasets/movielens/). Ten zbiór okazał się jednak dla mnie zbyt skromny i ujednolicony jeśli chodzi o rodzaj danych, aby móc dokonać na nim zróżnicowanych operacji. Postanowiłem jednak udokumentować wykonaną przez siebie pracę na tym zbiorze. 
