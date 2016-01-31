@@ -16,10 +16,9 @@
 ## Performance Monitor
 
 ###### LEGENDA
-
-### Wydajność *Hosta* w stanie spoczynku (idle)
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20legend.PNG "performanceMonitor - legend")
 
+### Wydajność *Hosta* w stanie spoczynku (idle)
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20idle_host.PNG "performanceMonitor - idle_host")
 
 ### Wydajność *Hosta* w czasie importu zestawu danych do mongo
@@ -63,11 +62,9 @@
 ## System Monitor
 
 ###### LEGENDA
-
-### Wydajność *Guesta* w stanie spoczynku (idle)
-
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Guest/SystemMonitor%20-%20Legend.PNG "systemMonitor - legend")
 
+### Wydajność *Guesta* w stanie spoczynku (idle)
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Guest/SystemMonitor%20-%20idle_guest.PNG "systemMonitor - idle_guest")
 
 ### Wydajność *Guesta* w czasie importu zestawu danych do mongo
