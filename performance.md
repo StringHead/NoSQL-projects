@@ -55,6 +55,6 @@
 * **Hard Disk**
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/ResourceMonotor_Disk%20-%20performance_host.PNG "resourceMonitor - import_harddisk_host")
 
-## DODATEK - Performance Monitor, **Reddit Comments** dataset import
+## DODATEK - Performance Monitor, *Reddit Comments* dataset import
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/1.png "performanceMonitor - import_reddit_host")
 
