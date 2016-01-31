@@ -68,6 +68,14 @@
   ```
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/2a_mongoimport_command%20movies_ratings.PNG "mongoimport_command_movies_ratings")
 
+  * Łączny czas importu:
+  ```sh
+  real    6m55.237s
+  user    3m39.436s
+  sys     1m10.860s
+  ```
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/2b_mongoimport_done%20movies_ratings.PNG = 100x "mongoimport_done_movies_ratings")
+
 
 
 
