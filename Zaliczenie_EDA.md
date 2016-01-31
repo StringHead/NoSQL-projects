@@ -32,7 +32,7 @@
   $ time zgip -d mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tgz
   $ time tar -xvf mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tar
   ```
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/MongoDB%20download%20and%20unzip.PNG"MongoDB - download_and_unzip")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/MongoDB%20download%20and%20unzip.PNG "MongoDB - download_and_unzip")
 
   ```sh
   # Ustawienie ścieżki systemowej:
