@@ -17,7 +17,7 @@
 
 ### Wydajność *Hosta* w stanie spoczynku (idle)
 
-![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20legend.PNG "performanceMonitorL - legend")
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20legend.PNG "performanceMonitor - legend")
 
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20idle_host.PNG "performanceMonitor - idle_host")
 
@@ -62,6 +62,8 @@
 ## System Monitor
 
 ### Wydajność *Guesta* w stanie spoczynku (idle)
+
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Guest/SystemMonitor%20-%20Legend.PNG "systemMonitor - legend")
 
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Guest/SystemMonitor%20-%20idle_guest.PNG "systemMonitor - idle_guest")
 
