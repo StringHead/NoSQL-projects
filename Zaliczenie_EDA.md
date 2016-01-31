@@ -21,8 +21,9 @@
 | **Storage size**    | *Primary:* 1TB, *Secondary:* 1TB               |
 | **Operating System**| Windows 10 Professional x64                    |
 
+<hr />
 
-1.	Pobranie i instalacja MongoDB na systemie wirtualnym **Linux Ubuntu** (*Guest*):
+1.	Pobranie i instalacja MongoDB na systemie wirtualnym **Linux Ubuntu** (*Guest*):  
 ```sh
 # Pobranie MongoDB:
 $ time wget https: //fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tgz
@@ -30,10 +31,14 @@ $ time wget https: //fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1410-cl
 # Rozpakowanie MongoDB:
 $ time zgip -d mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tgz
 $ time tar -xvf mongodb-linux-x86_64-ubuntu1410-clang-3.2.0.tar
+```
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/MongoDB%20download%20and%20unzip.PNG "MongoDB - download_and_unzip")
 
+```sh
 # Ustawienie ścieżki systemowej:
 $ PATH=$PATH:~/mongodb-linux-x86_64-ubuntu1410-clang-3.2.0/bin/
 ```
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/MongoDB%20set%20PATH.PNG "MongoDB - setPath")
 
 2.	Pobranie zbioru danych:  
   * Na samym początku postanowiłem użyć paczki **MovieLens data** -  [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB) ze strony [www.grouplens.org](http://grouplens.org/datasets/movielens/). Ten zbiór okazał się jednak dla mnie zbyt skromny i ujednolicony jeśli chodzi o rodzaj danych, aby móc dokonać na nim zróżnicowanych operacji. Postanowiłem jednak udokumentować wykonaną przez siebie pracę na tym zbiorze. 
