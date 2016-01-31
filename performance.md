@@ -17,6 +17,8 @@
 
 ### Wydajność *Hosta* w stanie spoczynku (idle)
 
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20legend.PNG "performanceMonitorL - legend")
+
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20idle_host.PNG "performanceMonitor - idle_host")
 
 ### Wydajność *Hosta* w czasie importu zestawu danych do mongo
