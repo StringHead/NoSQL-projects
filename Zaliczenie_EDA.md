@@ -61,12 +61,12 @@
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/1_unzip_ls_dataset.PNG "unzip_ls_dataset")
 
 2. Zaimportowanie zbiorów danych do mongo:
-  * Postanowiłem zaimportować 3 z 4 plików widocznych w punkcie 1: *movies.csv* (1.7 MB), *tags.csv* (20.9 MB), oraz mający najwięszky rozmiar *ratings.csv* (617,1 MB). Poniżej przykład zaimportowania właśnie tego ostatnie zbioru.
+  * Postanowiłem zaimportować 3 z 4 plików widocznych w punkcie 1: *movies.csv* (1.7 MB), *tags.csv* (20.9 MB), oraz mający najwięszky rozmiar *ratings.csv* (617,1 MB). Poniżej przykład zaimportowania właśnie tego ostatniego zbioru.
   ```sh
   # dataset import
   $ time mongoimport -d movielens -c movies_rating --type csv --headerline --file ./ratings.csv
   ```
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/1_unzip_ls_dataset.PNG "unzip_ls_dataset")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/2a_mongoimport_command%20movies_ratings.PNG "mongoimport_command_movies_ratings")
 
 
 
