@@ -1,9 +1,16 @@
 # *Host* & *Guest* performance
-* Na poniższych obrazkach zaprezentowano obciążenie procesora, dysku twardego oraz pamięci RAM.
-* Pomiarów obciążenia obu systemów dokonano:
-  * przed zaimporotowaniem zbioru danych do mongo
-  * w trakcie importu zbioru danych do mongo
-* Wykorzystano zbiór danych *MovieLens data* -  [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB), dostępny pod adresem [www.grouplens.org](http://grouplens.org/datasets/movielens/)
+* Na poniższych obrazkach (zrzutach ekranu) zaprezentowałem obciążenie procesora, dysku twardego oraz pamięci RAM.
+* Pomiarów obciążenia obu systemów dokonałem:
+  * przed zaimporotowaniem zbioru danych do mongo (*idle*)
+  * w trakcie importu zbioru danych do monog
+* Wykorzystałem zbiór danych *MovieLens data* -  [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB), dostępny pod adresem [www.grouplens.org](http://grouplens.org/datasets/movielens/)
+* Obciążenie systemów zmierzyłem przy użyciu narzędzi wbudowanych w system operacyjny:
+  * dla **Windows 10** (*Host*) jest to **Performance Monitor** oraz **Resource Monitor**
+  * dla **Linux Ubuntu** (*Guest*) jest to **System Monitor**
+* Dodatkowo, na samym końcu zamieściłem zrzut ekranu z **Performance Monitor**, ukazujący obciążenie systemu przez cały czas trwania importu danych do mongo. Do tego celu wykorzystałem zbiór danych **Reddit comments** (~250 GB, unzipped). Na wykresie możemy zauważyć wydajność systemu:
+  * na chwilę przed zaimportowaniem danych do mongo (*idle*)
+  * w trakcie importu danych do mongo
+  * po zaimportowaniu danych do mongo
 
 # *Host* - Windows 10
 ## Performance Monitor
@@ -47,3 +54,7 @@
 
 * **Hard Disk**
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/ResourceMonotor_Disk%20-%20performance_host.PNG "resourceMonitor - import_harddisk_host")
+
+## DODATEK - Performance Monitor, **Reddit Comments** dataset import
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/1.png "performanceMonitor - import_reddit_host")
+
