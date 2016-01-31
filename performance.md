@@ -66,9 +66,10 @@
 ### Wydajność *Guesta* w czasie importu zestawu danych do mongo
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Guest/SystemMonitor%20-%20performance_guest.PNG "systemMonitor - import_guest")
 
-### Wydajność *Guesta* w czasie importu zestawu danych do mongo (podgląd procesu **mongoimport**)
+### Wydajność *Guesta* w czasie importu zestawu danych do mongo (podgląd procesu *mongoimport*)
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Guest/SystemMonotor_Processes_MongoImport%20-%20performance_guest.PNG "systemMonitor_Processes - import_guest")
 
-## DODATEK - Performance Monitor, *Reddit Comments* dataset import
+# DODATEK
+## Performance Monitor, *Reddit Comments* dataset import
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/1.png "performanceMonitor - import_reddit_host")
 
