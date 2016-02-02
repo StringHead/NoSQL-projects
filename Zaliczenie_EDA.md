@@ -42,13 +42,15 @@
 
   <hr />
 
-2.	Pobranie zbioru danych:  
-  * Na samym początku postanowiłem użyć paczki **MovieLens data** - [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB) ze strony [www.grouplens.org](http://grouplens.org/datasets/movielens/). Niestety ten zestaw okazał się dla mnie zbyt skromny i ujednolicony jeśli chodzi o rodzaj danych, aby móc dokonać na nim zróżnicowanych operacji. Postanowiłem jednak udokumentować wykonaną przez siebie pracę na tym zbiorze.
-  * W drugiej kolejności skorzystałem ze zbioru danych **Reddit comments** - [reddit-torrent](https://mega.nz/#!ysBWXRqK!yPXLr25PgJi184pbJU3GtnqUY4wG7YvuPpxJjEmnb9A), udostępnionego na stronie [www.reddit.com](https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment).
+2.	Pobranie zbioru danych (*dataset*):  
+  * Na samym początku użyłem zbioru **Reddit comments** - [reddit-torrent](https://mega.nz/#!ysBWXRqK!yPXLr25PgJi184pbJU3GtnqUY4wG7YvuPpxJjEmnb9A), udostępnionego na stronie [www.reddit.com](https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment). Po zapoznaniu się z zestawem i przeprowadzeniu na nim paru zapytań uznałem, że skorzystam jednak z innego zbioru, a ze swoich dokonań na **Reddit comments** zamieściłem w dokumencie [performance.md](https://github.com/StringHead/NoSQL-projects/blob/master/performance.md) jedynie zrzuty ekranu, obrazujące obciążenie systemu w trakcie importu datasetu do bazy mongoDB.
+  * Ostatecznie zadania na zaliczenie postanowiłem wykoać na zbiorze danych **MovieLens data** - [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB), dostępnym na stronie [www.grouplens.org](http://grouplens.org/datasets/movielens/).
 
   <hr />
 
-## **MovieLens** dataset
+# **MovieLens** dataset
+
+## MongoDB
 
 1. Pobranie i rozpakowanie zbioru danych
   ```sh
@@ -60,8 +62,10 @@
   ```
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/1_unzip_ls_dataset.PNG "unzip_ls_dataset")
 
+### *Zadanie 2a* - zaimportowanie zbioru danych do bazy MongoDB
+
 2. Zaimportowanie zbiorów danych do mongo:
-  * Postanowiłem zaimportować 3 z 4 plików widocznych w punkcie 1: *movies.csv* (1.7 MB), *tags.csv* (20.9 MB), oraz mający najwięszky rozmiar *ratings.csv* (617,1 MB). Poniżej przykład zaimportowania właśnie tego ostatniego zbioru.
+  * Postanowiłem zaimportować 3 z 4 plików widocznych w punkcie 1: *movies.csv* (1.7 MB), *tags.csv* (20.9 MB), oraz mający najwięszky rozmiar *ratings.csv* (588,6 MB). Poniżej przykład zaimportowania właśnie tego ostatniego zbioru.
   ```sh
   # dataset import
   $ time mongoimport -d movielens -c movies_rating --type csv --headerline --file ./ratings.csv
@@ -99,6 +103,7 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/5_db.collection.findOne.PNG "db.collection.findOne")
 
+### *Zadanie 2b* - zliczenie liczby zaimportowanych rekordów
 
   ```sh
   # Zliczenie wszystkich rekordów
@@ -109,7 +114,11 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/4_db.collection.count.PNG "db.collection.count")
 
-  * Jak widać, struktura powyższych kolekcji nie jest zbyt rozbudowana. Dodatkowo jesteśmy zmuszeni do operowania na 3 oddzielnych kolekcjach, zamiast na jednej (jak to jest właśnie w przypadku zbioru danych *Reddit comments* - przedstawię go w dalszej części niniejszej dokumentacji). Wydaje się, że jedym z rozwiązań mogłoby się okazać użycie funkcji **mapReduce**, dostępnej w mongoDB, dzięki której możliwe jest złączenie dokumentów z kilku kolekcji w jedną, nową. Ciekawy opis tej procedury, wraz z przykładem użycia i objaśnieniem, czym jest mapReduce, znalazłem na stronie [www.noppanit.com](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/). Ostatecznie postanowiłem jedynie zapoznać się z tą metodą, a jej wykorzystaniem zajmę się - mam nadzieję - przy innej okazji :).
+  * Jak widać, struktura powyższych kolekcji nie jest zbyt rozbudowana. Dodatkowo musimy operować na 3 oddzielnych kolekcjach, zamiast na jednej (przykładem może być zbiór *Reddit comments*). Wydaje się, że jednym z rozwiązań mogłoby się okazać użycie funkcji **mapReduce**, dostępnej w mongoDB, dzięki której możliwe jest złączenie dokumentów z kilku kolekcji w jedną, nową. Ciekawy opis tej procedury, wraz z przykładem użycia i objaśnieniem, czym jest mapReduce, znalazłem na stronie [www.noppanit.com](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/). Ostatecznie postanowiłem jedynie zapoznać się z tą metodą, a jej wykorzystaniem zajmę się - mam nadzieję - przy innej okazji :).
+
+### *Zadanie 2c* - policzenie kilku prostych agregacji na zaimportowanych danych
+
+
 
 
 

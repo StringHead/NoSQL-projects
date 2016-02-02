@@ -1,3 +1,0 @@
-> db.movies_ratings.count({ rating: 5, movieId: 122886 })
-428
-> 
