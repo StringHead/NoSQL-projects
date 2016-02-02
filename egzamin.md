@@ -7,13 +7,13 @@
 
   * Do wykonania zadania z agregacji wykorzystałem zbiór danych **tranStats**, zawierający obszerne i szczegółowe statystyki na temat linii lotniczych i ich przelotów w samych Stanach Zjednoczonych. Dataset jest dostępny do pobrania ze strony [www.transtats.bts.gov](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_Name=On-Time). Co ciekawe, odbywa się to przy użyciu formularza, za pomocą którego samemu generujemy zbiór, wybierając w nim wyłącznie te dane, które nas interesują. Utworzony przeze mnie dataset uwzględnia wszystkie stany USA i dotyczy miesiąca Lutego, roku 2015.
 
-    * Koloryzowanie składni w mongoDB uzyskałem poprzez użycie rozszerzenia **Mongo Hacker** - [mongo-hacker](https://tylerbrock.github.io/mongo-hacker/)
-
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/transtats.bts.gov_example.PNG "transtats.btv.gov_example")
 
   <hr />
 
 ### *Zadanie 3.2*
+
+  * Koloryzowanie składni w mongoDB uzyskałem poprzez użycie rozszerzenia **Mongo Hacker** - [mongo-hacker](https://tylerbrock.github.io/mongo-hacker/)
 
 2. Zaimportowanie zbioru danych do bazy MongoDB
 
