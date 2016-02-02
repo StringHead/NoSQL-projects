@@ -23,6 +23,8 @@
 
 <hr />
 
+### SPRAWDŹ! --> [WYDAJNOŚĆ SYSTEMU PODCZAS IMPORTU ZBIORU DANYCH DO BAZY MongoDB!](https://github.com/StringHead/NoSQL-projects/blob/master/performance.md "System performance")
+
 1.	Pobranie i instalacja MongoDB na systemie wirtualnym **Linux Ubuntu** (*Guest*):  
   ```sh
   # Pobranie MongoDB:
