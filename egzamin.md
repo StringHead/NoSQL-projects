@@ -1,8 +1,6 @@
 # Bazy NoSQL
 ## EGZAMIN
 
-##### MONGO_IMPORT
-
 ### *Zadanie 3.1*
 
 1.	Pobranie zbioru danych (*dataset*):
