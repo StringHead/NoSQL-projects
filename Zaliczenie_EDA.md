@@ -150,37 +150,37 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/5.db.movies_ratings%2C%20rating5.count.PNG "5.db.movies_ratings==5")
 
-    5. Wyszukanie w kolekcji **movies_ratings** zakresu dostępnych ocen (*ratings*) dla filmu o "movieId" = 106489
+  5. Wyszukanie w kolekcji **movies_ratings** zakresu dostępnych ocen (*ratings*) dla filmu o "movieId" = 106489
 
-    ```sh
-    > db.runCommand({distinct: movies_ratings, key:rating, query: {movieId: 106489 } });
+  ```sh
+  > db.runCommand({distinct: movies_ratings, key:rating, query: {movieId: 106489 } });
+  ```
+
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/6.db.runCommand.PNG "6.db.runCommand")
+
+  6. Wyszukanie w kolekcji **movies_ratings** 2 filmów o najwyższych ocenach (*ratings*)
+
+  ```sh
+  > db.movies_ratings.find( {}, {_id:0} ).sort({ "rating": -1} ).limit(2).pretty()
     ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/6.db.runCommand.PNG "6.db.runCommand")
-
-    6. Wyszukanie w kolekcji **movies_ratings** 2 filmów o najwyższych ocenach (*ratings*)
-
-    ```sh
-    > db.movies_ratings.find( {}, {_id:0} ).sort({ "rating": -1} ).limit(2).pretty()
-    ```
-
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/7.db.movies_ratings.find_2_highest_rates.PNG "7.db.movies_ratings.find(2 highest rates)")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/7.db.movies_ratings.find_2_highest_rates.PNG "7.db.movies_ratings.find(2 highest rates)")
 
 ### DODATEK
 
-    7. Wyszukanie w kolekcji **movies_tags** wszystkich filmów, w których aktorką (oznaczoną w kluczu "tag") jest Rosamund Pike, a następnie utworzenie nowej kolekcji składającej się wyłącznie z filmów znalezionych na podstawie podanego kryterium
+  7. Wyszukanie w kolekcji **movies_tags** wszystkich filmów, w których aktorką (oznaczoną w kluczu "tag") jest Rosamund Pike, a następnie utworzenie nowej kolekcji składającej się wyłącznie z filmów znalezionych na podstawie podanego kryterium
 
-    ```sh
-    > var f = db.movies_tags.find ( {tag: {$all: [ /Rosamund Pike/ ] } })
-    > for ( var i = 0; i < f.length(); ++i) {
-    > db.rosamundPike_movies.insert(
-    > {movie : f[i] }
-    > ); }
-    ```
+  ```sh
+  > var f = db.movies_tags.find ( {tag: {$all: [ /Rosamund Pike/ ] } })
+  > for ( var i = 0; i < f.length(); ++i) {
+  > db.rosamundPike_movies.insert(
+  > {movie : f[i] }
+  > ); }
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/B1.RosamundPike_movies.insert_new_collection2.PNG "B1.RosamundPike_movies.insert_new_collection2")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/B1.RosamundPike_movies.insert_new_collection2.PNG "B1.RosamundPike_movies.insert_new_collection2")
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/B2.RosamundPike_movies.insert_new_collection2.PNG "B2.RosamundPike_movies.insert_new_collection2")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/B2.RosamundPike_movies.insert_new_collection2.PNG "B2.RosamundPike_movies.insert_new_collection2")
 
 
 
