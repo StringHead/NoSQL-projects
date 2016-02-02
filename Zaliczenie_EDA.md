@@ -229,64 +229,64 @@
 
 ### *Zadanie 2b* - zliczenie liczby zaimportowanych rekordów
 
-    ```sql
-    # Zliczenie wszystkich rekordów
-    > SELECT COUNT(*) FROM pgsql_movies;
-    > SELECT COUNT(*) FROM pgsql_movies_ratings;
-    > SELECT COUNT(*) FROM pgsql_movies_tags;
-    ```
+  ```sql
+  # Zliczenie wszystkich rekordów
+  > SELECT COUNT(*) FROM pgsql_movies;
+  > SELECT COUNT(*) FROM pgsql_movies_ratings;
+  > SELECT COUNT(*) FROM pgsql_movies_tags;
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/4_db.collection.count.PNG "db.collection.count")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/4_db.collection.count.PNG "db.collection.count")
 
 ### *Zadanie 2c* - policzenie kilku prostych agregacji na zaimportowanych danych
 
-    1. Wyszukanie w kolekcji **movies** filmu, mającego w tytule nazwę *"Hobbit"*
+  1. Wyszukanie w kolekcji **movies** filmu, mającego w tytule nazwę *"Hobbit"*
 
-    ```sql
-    > select * from pgsql_movies where title like '%Hobbit%';
-    ```
+  ```sql
+  > select * from pgsql_movies where title like '%Hobbit%';
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query1.PNG "psql_query_1")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query1.PNG "psql_query_1")
 
-    2. Wyszukanie w kolekcji **movies** filmu, mającego w tytule nazwę *"Hobbit"* i zawężając tym razem wyszukiwania, poprzez uwzględnienie roku produkcji, znajdującego się również w kluczu "title".
+  2. Wyszukanie w kolekcji **movies** filmu, mającego w tytule nazwę *"Hobbit"* i zawężając tym razem wyszukiwania, poprzez uwzględnienie roku produkcji, znajdującego się również w kluczu "title".
 
-    ```sql
-    > select * from pgsql_movies where title like '%Hobbit%' and title like '%2013%';
-    ```
+  ```sql
+  > select * from pgsql_movies where title like '%Hobbit%' and title like '%2013%';
+  ```
 
-    ![alt text](2.movies_create_table_and_import "psql_query_2")
+  ![alt text](2.movies_create_table_and_import "psql_query_2")
 
-    3. Wyszukanie ocen (*ratings*) w kolekcji **movies_ratings** dla filmu o "movieId" = 106489 i ograniczenie wyświetlanych wyników do 4.
+  3. Wyszukanie ocen (*ratings*) w kolekcji **movies_ratings** dla filmu o "movieId" = 106489 i ograniczenie wyświetlanych wyników do 4.
 
-    ```sql
-    > select * from pgsql_movies_ratings where movieId=106489 limit 4;
-    ```
+  ```sql
+  > select * from pgsql_movies_ratings where movieId=106489 limit 4;
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query3.PNG "psql_query_3")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query3.PNG "psql_query_3")
 
-    4. Zliczenie ilości ocen (*ratings*) równych 5, w kolekcji **movies_ratings**, dla filmu o "movieId" = 106489
+  4. Zliczenie ilości ocen (*ratings*) równych 5, w kolekcji **movies_ratings**, dla filmu o "movieId" = 106489
 
-    ```sql
-    > select count(movieid) from pgsql_movies_ratings where movieId=106489 and rating=5;
-    ```
+  ```sql
+  > select count(movieid) from pgsql_movies_ratings where movieId=106489 and rating=5;
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query5.PNG "psql_query_5")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query5.PNG "psql_query_5")
 
-    5. Wyszukanie w kolekcji **movies_ratings** zakresu dostępnych ocen (*ratings*) dla filmu o "movieId" = 106489
+  5. Wyszukanie w kolekcji **movies_ratings** zakresu dostępnych ocen (*ratings*) dla filmu o "movieId" = 106489
 
-    ```sql
-    > select distinct rating from pgsql_movies_ratings where movieId=106489;
-    ```
+  ```sql
+  > select distinct rating from pgsql_movies_ratings where movieId=106489;
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query6.PNG "psql_query_6")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query6.PNG "psql_query_6")
 
-    6. Wyszukanie w kolekcji **movies_ratings** 2 filmów o najwyższych ocenach (*ratings*)
+  6. Wyszukanie w kolekcji **movies_ratings** 2 filmów o najwyższych ocenach (*ratings*)
 
-    ```sql
-    > select * from pgsql_movies_ratings order by rating desc, userId asc limit 2;
-    ```
+  ```sql
+  > select * from pgsql_movies_ratings order by rating desc, userId asc limit 2;
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query7.PNG "psql_query_7")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query7.PNG "psql_query_7")
 
 
 
