@@ -42,7 +42,7 @@
     > show collections
     ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/2.show_dbs_collections.PNG "MongoDB - show_dbs_collections")
+    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/3.db.collection.findOne.png "MongoDB - show_dbs_collections")
 
 
     ```sql
@@ -50,7 +50,7 @@
     > db.airlines2015.findOne()
     ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/3.db.collection.findOne.PNG "MongoDB - db.collection.findOne")
+    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/3.db.collection.findOne.png "MongoDB - db.collection.findOne")
 
     ```sql
     # Zliczenie wszystkich rekordów
