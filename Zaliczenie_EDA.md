@@ -137,7 +137,7 @@
   3. Wyszukanie ocen (*ratings*) w kolekcji **movies_ratings** dla filmu o "movieId" = 106489 i ograniczenie wyświetlanych wyników do 4.
 
   ```sh
-  > db.movies_ratings.find({ movieId: 106489 })limit(4).pretty();
+  > db.movies_ratings.find({ movieId: 106489 }).limit(4).pretty();
   ```
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/3.db.movies_ratings.find.PNG "3.db.movies_ratings.find")
