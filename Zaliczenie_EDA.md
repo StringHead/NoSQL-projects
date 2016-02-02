@@ -47,6 +47,7 @@
   <hr />
 
 2.	Pobranie zbioru danych (*dataset*):  
+
   * Na samym początku użyłem zbioru **Reddit comments** - [reddit-torrent](https://mega.nz/#!ysBWXRqK!yPXLr25PgJi184pbJU3GtnqUY4wG7YvuPpxJjEmnb9A), udostępnionego na stronie [www.reddit.com](https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment). Po zapoznaniu się z zestawem i przeprowadzeniu na nim paru zapytań uznałem, że skorzystam jednak z innego zbioru, a ze swoich dokonań na **Reddit comments** zamieściłem w dokumencie [performance.md](https://github.com/StringHead/NoSQL-projects/blob/master/performance.md) jedynie zrzuty ekranu, obrazujące obciążenie systemu w trakcie importu datasetu do bazy mongoDB.
   * Ostatecznie zadania na zaliczenie postanowiłem wykoać na zbiorze danych **MovieLens data** - [ml-latest.zip](http://files.grouplens.org/datasets/movielens/ml-latest.zip) (size: 144 MB), dostępnym na stronie [www.grouplens.org](http://grouplens.org/datasets/movielens/).
 

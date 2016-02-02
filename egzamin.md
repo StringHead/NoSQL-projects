@@ -3,7 +3,11 @@ MongoDB
 
 ##### MONGO_IMPORT
 
-![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/1.import_db.PNG "MongoDB - import_db")
+1.	Pobranie zbioru danych (*dataset*):
+
+  * Do wykonania zadania z agregacji wykorzystałem zbiór danych **tranStats**, zawierający obszerne i szczegółowe statystyki na temat linii lotniczych i ich przelotów w samych Stanach Zjednoczonych. Dataset jest dostępny do pobrania ze strony [www.transtats.bts.gov](https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment). Co ciekawe, odbywa się to przy użyciu formularza, za pomocą którego samemu generujemy zbiór, uwzględniając w nim wyłącznie te dane, które nas interesują
+
+![alt text](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_Name=On-Time)
 
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/2.show_dbs_collections.PNG "MongoDB - show_dbs_collections")
 
