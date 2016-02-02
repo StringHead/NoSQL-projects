@@ -75,5 +75,4 @@
 
 # DODATEK
 ## Performance Monitor, *Reddit Comments* dataset import
-![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/OLD/1.png "performanceMonitor - import_reddit_host")
-
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/1.png "performanceMonitor - import_reddit_host")
