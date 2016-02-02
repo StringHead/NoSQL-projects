@@ -124,7 +124,7 @@
   > db.movies.find({ title: /Hobbit/i }).pretty();
   ```
 
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/1.db.movies.find(title%20Hobbit).PNG "1.db.movies.find(title Hobbit)")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/1.db.movies.findt%20itle%20Hobbit.PNG "1.db.movies.find(title Hobbit)")
 
   2. Wyszukanie w kolekcji **movies** filmu, mającego w tytule nazwę *"Hobbit"* i zawężając tym razem wyszukiwania, poprzez uwzględnienie roku produkcji, znajdującego się również w kluczu "title".
 
@@ -132,7 +132,7 @@
   > db.movies.find({ title: /Hobbit.*\(2013\).*/i }).pretty();
   ```
 
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/2.db.movies.find(%20title%20Hobbit).PNG "2.db.movies.find(title Hobbit")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Mongo_queries/2.db.movies.find%20title%20Hobbit%20.PNG "2.db.movies.find(title Hobbit")
 
   3. Wyszukanie ocen (*ratings*) w kolekcji **movies_ratings** dla filmu o "movieId" = 106489 i ograniczenie wyświetlanych wyników do 4.
 
