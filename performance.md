@@ -12,6 +12,9 @@
   * w trakcie importu danych do mongo
   * po zaimportowaniu danych do mongo
 
+
+<hr />
+
 # *Host* - Windows 10
 ## Performance Monitor
 
@@ -21,9 +24,7 @@
 ### Wydajność *Hosta* w stanie spoczynku (idle)
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20idle_host.PNG "performanceMonitor - idle_host")
 
-### Wydajność *Hosta* w czasie importu zestawu danych do mongo
-![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20performance_host.PNG "performanceMonitor - import_host")
-
+<hr />
 
 ## Resource Monitor
 
@@ -41,9 +42,24 @@
 * **Hard Disk**
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/ResourceMonotor_Disk%20-%20idle_host.PNG "resourceMonitor - idle_harddisk_host")
 ---
-<br />
 
-### Wydajność *Hosta* w czasie importu zestawu danych do mongo
+<hr />
+
+# // **MONGODB** // **MONGODB** // **MONGODB** //
+
+## Performance Monitor
+
+###### LEGENDA
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20legend.PNG "performanceMonitor - legend")
+
+### Wydajność *Hosta* w czasie importu zestawu danych do MongoDB
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20performance_host.PNG "performanceMonitor - import_host")
+
+<hr />
+
+## Resource Monitor
+
+### Wydajność *Hosta* w czasie importu zestawu danych do MongoDB
 
 * **Overview**
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/ResourceMonotor_Overview%20-%20performance_host.PNG "resourceMonitor - import_overview_host")
@@ -72,6 +88,51 @@
 
 ### Wydajność *Guesta* w czasie importu zestawu danych do mongo (podgląd procesu *mongoimport*)
 ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Guest/SystemMonotor_Processes_MongoImport%20-%20performance_guest.PNG "systemMonitor_Processes - import_guest")
+
+<hr />
+
+# // **PostrgreSQL** // **PostrgreSQL** // **PostrgreSQL** //
+
+## Performance Monitor
+
+###### LEGENDA
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Host/PerformanceMonitor%20-%20legend.PNG "performanceMonitor - legend")
+
+### Wydajność *Hosta* w czasie importu zestawu danych do MongoDB
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/Performance/Host/PerformanceMonitor%20-%20import.PNG "performanceMonitor - import_host")
+
+<hr />
+
+## Resource Monitor
+
+### Wydajność *Hosta* w czasie importu zestawu danych do MongoDB
+
+* **Overview**
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/Performance/Host/ResourceMonitor_overview%20-%20import.PNG "resourceMonitor - import_overview_host")
+
+* **CPU**
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/Performance/Host/ResourceMonitor_cpu%20-%20import.PNG "resourceMonitor - import_cpu_host")
+
+* **RAM Memory**
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/Performance/Host/ResourceMonitor_memory%20-%20import.PNG "resourceMonitor - import_ram_host")
+
+* **Hard Disk**
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/Performance/Host/ResourceMonitor_disk%20-%20import.PNG "resourceMonitor - import_harddisk_host")
+
+# *Guest* - Linux Ubuntu
+
+## System Monitor
+
+###### LEGENDA
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Guest/SystemMonitor%20-%20Legend.PNG "systemMonitor - legend")
+
+### Wydajność *Guesta* w stanie spoczynku (idle)
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/Performance/Guest/SystemMonitor%20-%20idle_guest.PNG "systemMonitor - idle_guest")
+
+### Wydajność *Guesta* w czasie importu zestawu danych do mongo
+![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/Performance/Guest/System_Monitor%20-%20import.PNG "systemMonitor - import_guest")
+
+<hr />
 
 # DODATEK
 ## Performance Monitor, *Reddit Comments* dataset import
