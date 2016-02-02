@@ -31,41 +31,41 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/1.import_db.PNG "MongoDB - import_db")
 
-  3. Uruchomienie mongo...
+3. Uruchomienie mongo...
 
-    * Pierwsze, podstawowe operacje
+  * Pierwsze, podstawowe operacje
 
-    ```sql
-    # Wyświetlenie dostępnych baz danych
-    > show dbs
+  ```sql
+  # Wyświetlenie dostępnych baz danych
+  > show dbs
 
-    # Wybranie bazy danych "tranStats" i wyświetlenie jej kolekcji
-    > use tranStats
-    > show collections
-    ```
+  # Wybranie bazy danych "tranStats" i wyświetlenie jej kolekcji
+  > use tranStats
+  > show collections
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/3.db.collection.findOne.png "MongoDB - show_dbs_collections")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/3.db.collection.findOne.png "MongoDB - show_dbs_collections")
 
 
-    ```sql
-    # Wyświetlenie przykładowego dokumentu z kolekcji
-    > db.airlines2015.findOne()
-    ```
+  ```sql
+  # Wyświetlenie przykładowego dokumentu z kolekcji
+  > db.airlines2015.findOne()
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/3.db.collection.findOne.png "MongoDB - db.collection.findOne")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/3.db.collection.findOne.png "MongoDB - db.collection.findOne")
 
-    ```sql
-    # Zliczenie wszystkich rekordów
-    > db.tranStats.count()
-    ```
+  ```sql
+  # Zliczenie wszystkich rekordów
+  > db.tranStats.count()
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/4.db.collection.count.PNG "MongoDB - db.collection.count")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/mongo_import/4.db.collection.count.PNG "MongoDB - db.collection.count")
 
-    <hr />
+  <hr />
 
 ### *Zadanie 3.3* - Pięć przykładowych agregacji korzystających z *Aggregation Pipeline*
 
-  1. Średni dystans wszystkich przelotów (*w milach*)
+1. Średni dystans wszystkich przelotów (*w milach*)
 
   ```sql
   > db.airlines2015.aggregate(
@@ -75,7 +75,7 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/Aggregations/1.Average_distance_of_all_flights.PNG "average_distance_of_all_flights")
 
-  2. Najdłuższy czas przelotu 8 samlotów, z uwzględnieniem numeru lotu (*FL_NUM*) i sortowaniem od najdłuższego do najkrótszego czasu (*AIR_TIME*)
+2. Najdłuższy czas przelotu 8 samlotów, z uwzględnieniem numeru lotu (*FL_NUM*) i sortowaniem od najdłuższego do najkrótszego czasu (*AIR_TIME*)
 
   ```sql
   > db.airlines2015.aggregate(
@@ -86,7 +86,7 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/Aggregations/2.8_airplanes_longest_air_time.PNG "airplanes_longest_air_time")
 
-  3. 5 numerów samolotów (*TAIL_NUM*), które wykonały najwięcej przelotów (*Count_Of_Flights*) do Waszyngtonu (*DEST_CITY_NAME*)
+3. 5 numerów samolotów (*TAIL_NUM*), które wykonały najwięcej przelotów (*Count_Of_Flights*) do Waszyngtonu (*DEST_CITY_NAME*)
 
   ```sql
   > db.airlines2015.aggregate(
@@ -97,7 +97,7 @@
   ```
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/Aggregations/3.5_airplanes_Washington_countofFlights.PNG "airplanes_Washington_countOfFlights")
 
-  4. Łączny dystans wszystkich przelotów (*DISTANCE*) dokonanych danego dnia (*FL_DATE*), wraz z ich łącznym czasem trwania (*AIR_TIME*) - czas przelotów musi być dłuższy niż 1500000 minut (25 000 h). Wyświetlonych zostanie pierwszych 20 wyników
+4. Łączny dystans wszystkich przelotów (*DISTANCE*) dokonanych danego dnia (*FL_DATE*), wraz z ich łącznym czasem trwania (*AIR_TIME*) - czas przelotów musi być dłuższy niż 1500000 minut (25 000 h). Wyświetlonych zostanie pierwszych 20 wyników
 
   ```sql
   > db.airlines2015.aggregate(
@@ -108,7 +108,7 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/Aggregations/4.20_Total_distance_total_airTime_Date.PNG "total_distance_total_airTime_Data")
 
-  5. Pierwszych 10 miast (*DEST_CITY_NAME*) z największą ilością przylotów (*Total_Visits*), posortowane od najczęściej do najrzadziej występujących
+5. Pierwszych 10 miast (*DEST_CITY_NAME*) z największą ilością przylotów (*Total_Visits*), posortowane od najczęściej do najrzadziej występujących
 
   ```sql
   > db.airlines2015.aggregate(
@@ -126,7 +126,7 @@
 
 ### *Zadanie 3.3* - Agregacje z *Zadania 3.2*, wykonane w języku **Python**
 
-  1. Średni dystans wszystkich przelotów (*w milach*)
+1. Średni dystans wszystkich przelotów (*w milach*)
 
   ```Python
   import pymongo
@@ -149,7 +149,7 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/Aggregations/Python/1.PNG "average_distance_of_all_flights")
 
-  2. Najdłuższy czas przelotu 8 samlotów, z uwzględnieniem numeru lotu (*FL_NUM*) i sortowaniem od najdłuższego do najkrótszego czasu (*AIR_TIME*)
+2. Najdłuższy czas przelotu 8 samlotów, z uwzględnieniem numeru lotu (*FL_NUM*) i sortowaniem od najdłuższego do najkrótszego czasu (*AIR_TIME*)
 
   ```Python
   import pymongo
@@ -173,7 +173,7 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/Aggregations/Python/2.PNG "airplanes_longest_air_time")
 
-  3. 5 numerów samolotów (*TAIL_NUM*), które wykonały najwięcej przelotów (*Count_Of_Flights*) do Waszyngtonu (*DEST_CITY_NAME*)
+3. 5 numerów samolotów (*TAIL_NUM*), które wykonały najwięcej przelotów (*Count_Of_Flights*) do Waszyngtonu (*DEST_CITY_NAME*)
 
   ```Python
   import pymongo
@@ -199,7 +199,7 @@
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/Aggregations/Python/3.PNG "airplanes_Washington_countOfFlights")
 
 
-  4. Łączny dystans wszystkich przelotów (*DISTANCE*) dokonanych danego dnia (*FL_DATE*), wraz z ich łącznym czasem trwania (*AIR_TIME*) - czas przelotów musi być dłuższy niż 1500000 minut (25 000 h). Wyświetlonych zostanie pierwszych 20 wyników
+4. Łączny dystans wszystkich przelotów (*DISTANCE*) dokonanych danego dnia (*FL_DATE*), wraz z ich łącznym czasem trwania (*AIR_TIME*) - czas przelotów musi być dłuższy niż 1500000 minut (25 000 h). Wyświetlonych zostanie pierwszych 20 wyników
 
   ```Python
   import pymongo
@@ -224,7 +224,7 @@
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/Aggregations/Python/4.PNG "total_distance_total_airTime_Data")
 
-  5. Pierwszych 10 miast (*DEST_CITY_NAME*) z największą ilością przylotów (*Total_Visits*), posortowane od najczęściej do najrzadziej występujących
+5. Pierwszych 10 miast (*DEST_CITY_NAME*) z największą ilością przylotów (*Total_Visits*), posortowane od najczęściej do najrzadziej występujących
 
   ```Python
   import pymongo
