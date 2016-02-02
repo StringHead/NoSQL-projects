@@ -99,6 +99,7 @@
   ```
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Movielens/non-stable_dataset/3_mongo_showDbs_useDb_showCollections.PNG "mongo_showDbs_useDb_showCollections")  
+
   ```sql
   # Wyświetlenie przykładowego dokumentu ze wszystkich 3 kolekcji
   > db.movies.findOne()
