@@ -122,7 +122,7 @@
 
       ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Egzamin/Aggregations/5.8_most_visited_cities%20sorted_desc.PNG "most_visited_cities sorted_desc")
 
-
+      <hr />
 
 ### *Zadanie 3.3* - Agregacje z *Zadania 3.2*, wykonane w języku **Python**
 
