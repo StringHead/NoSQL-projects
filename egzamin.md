@@ -1,5 +1,5 @@
-# NoSQL-projects
-MongoDB
+# Bazy NoSQL
+## EGZAMIN
 
 ##### MONGO_IMPORT
 
