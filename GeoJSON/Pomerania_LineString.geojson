@@ -11,26 +11,466 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-		  [ 18.654441833496093, 54.348002478928194 ],
-          [ 18.56865406036377, 54.44464149250536 ],
-          [ 18.539814949035644, 54.51639848339953 ],
-          [ 18.41132640838623, 54.720481071241394 ],
-          [ 18.246746063232422, 54.60486135194967 ],
-          [ 17.747254371643066, 54.539135955464765 ],
-          [ 17.02777862548828, 54.464849902391514 ],
-          [ 17.35887050628662, 53.665124651566295 ],
-          [ 17.565507888793945, 53.69782443170517 ],
-          [ 17.49220848083496, 54.16874023292171 ],
-          [ 17.978299856185913, 54.121319208265106 ],
-		  [ 18.19735050201416, 54.334092527861266 ],
-		  [ 18.531532287597656, 53.96739671749272 ],
-          [ 18.931245803833008, 53.7333294984464 ],
-          [ 19.030508995056152, 53.91970735505101 ],
-          [ 19.034800529479977, 54.03586729346079 ],
-          [ 18.798980712890625, 54.08658310546472 ],
-          [ 19.11498785018921, 54.21457620875587 ],
-          [ 18.641738891601562, 54.25900773295519 ],
-          [ 18.654441833496093, 54.348002478928194 ]
+          [
+            18.654441833496093,
+            54.348002478928194
+          ],
+          [
+            18.56865406036377,
+            54.44464149250536
+          ],
+          [
+            18.539814949035644,
+            54.51639848339953
+          ],
+          [
+            18.41132640838623,
+            54.720481071241394
+          ],
+          [
+            18.246746063232422,
+            54.60486135194967
+          ],
+          [
+            17.747254371643066,
+            54.539135955464765
+          ],
+          [
+            17.02777862548828,
+            54.464849902391514
+          ],
+          [
+            17.35887050628662,
+            53.665124651566295
+          ],
+          [
+            17.565507888793945,
+            53.69782443170517
+          ],
+          [
+            17.49220848083496,
+            54.16874023292171
+          ],
+          [
+            17.978299856185913,
+            54.121319208265106
+          ],
+          [
+            18.19735050201416,
+            54.334092527861266
+          ],
+          [
+            18.531532287597656,
+            53.96739671749272
+          ],
+          [
+            18.931245803833008,
+            53.7333294984464
+          ],
+          [
+            19.030508995056152,
+            53.91970735505101
+          ],
+          [
+            19.034800529479977,
+            54.03586729346079
+          ],
+          [
+            18.798980712890625,
+            54.08658310546472
+          ],
+          [
+            19.11498785018921,
+            54.21457620875587
+          ],
+          [
+            18.641738891601562,
+            54.25900773295519
+          ],
+          [
+            18.654441833496093,
+            54.348002478928194
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#15a0e3",
+        "marker-size": "large",
+        "marker-symbol": "town-hall",
+        "city": "Gdańsk",
+        "county": "Gdańsk County",
+        "other-towns": "",
+        "total-gminas": 1,
+        "major-corporations": "Energa Gdańsk Power Generator, Ergo Hestia, Gdańsk Repair Yard, GE Capital Bank, Grupa LOTOS, Intel Technology Poland, Elnord, LPP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.654441833496093,
+          54.348002478928194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00e3ff",
+        "marker-size": "large",
+        "marker-symbol": "town-hall",
+        "city": "Sopot",
+        "county": "",
+        "other-towns": "",
+        "total-gminas": 1,
+        "major-corporations": "Ergo Hestia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.56865406036377,
+          54.44464149250536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#41e157",
+        "marker-size": "large",
+        "marker-symbol": "town-hall",
+        "city": "Gdynia",
+        "county": "",
+        "other-towns": "",
+        "total-gminas": 1,
+        "major-corporations": "Gdynia Stocznia, Prokom Software"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.539814949035644,
+          54.51639848339953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#da994f",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Pruszcz Gdański",
+        "county": "Gdańsk County",
+        "other-towns": "",
+        "total-gminas": 8,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.641738891601562,
+          54.25900773295519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#a9ec18",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Wejherowo",
+        "county": "Wejherowo County",
+        "other-towns": "Rumia, Reda",
+        "total-gminas": 10,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.246746063232422,
+          54.60486135194967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#4ae598",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Puck",
+        "county": "Puck County",
+        "other-towns": "Władysławowo, Jastarnia, Hel",
+        "total-gminas": 7,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.41132640838623,
+          54.720481071241394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#f10b3f",
+        "marker-size": "large",
+        "marker-symbol": "town-hall",
+        "city": "Słupsk",
+        "county": "Słupsk County",
+        "other-towns": "Ustka, Kępice",
+        "total-gminas": 10,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.02777862548828,
+          54.464849902391514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e5eb57",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Starogard Gdański",
+        "county": "Starogard Conty",
+        "other-towns": "Skarszewy, Skórcz, Czarna Woda",
+        "total-gminas": 13,
+        "major-corporations": "Polpharma, Destylarnia Sobieski"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.531532287597656,
+          53.96739671749272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#805099",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Tczew",
+        "county": "Tczew County",
+        "other-towns": "Pelplin, Gniew",
+        "total-gminas": 6,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.798980712890625,
+          54.08658310546472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#25ae6d",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Kartuzy",
+        "county": "Kartuzy County",
+        "other-towns": "Żukowo",
+        "total-gminas": 8,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.19735050201416,
+          54.334092527861266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#74a441",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Chojnice",
+        "county": "Chojnice County",
+        "other-towns": "Czersk, Brusy",
+        "total-gminas": 5,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.565507888793945,
+          53.69782443170517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#4b9953",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Kwidzyn",
+        "county": "Kwidzyn County",
+        "other-towns": "Prabuty",
+        "total-gminas": 6,
+        "major-corporations": "International Paper Kwidzyn, Philips Consumer Electronics"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.931245803833008,
+          53.7333294984464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7a523c",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Bytów",
+        "county": "Bytów County",
+        "other-towns": "Miastko",
+        "total-gminas": 10,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.49220848083496,
+          54.16874023292171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#d91db8",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Kościerzyna",
+        "county": "Kościerzyna County",
+        "other-towns": "",
+        "total-gminas": 8,
+        "major-corporations": "Lubiana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.978299856185913,
+          54.121319208265106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ffad67",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Lębork",
+        "county": "Lębork County",
+        "other-towns": "Łeba",
+        "total-gminas": 5,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.747254371643066,
+          54.539135955464765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ff3f00",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Malbork",
+        "county": "Malbork County",
+        "other-towns": "Nowy Staw",
+        "total-gminas": 6,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.034800529479977,
+          54.03586729346079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7ba5ad",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Człuchów",
+        "county": "Człuchów County",
+        "other-towns": "Czarne, Debrzno",
+        "total-gminas": 7,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.35887050628662,
+          53.665124651566295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#a25858",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Sztum",
+        "county": "Sztum County",
+        "other-towns": "Dzierzgoń",
+        "total-gminas": 5,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.030508995056152,
+          53.91970735505101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#9073b6",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Nowy Dwór Gdański",
+        "county": "Nowy Dwór Gdański County",
+        "other-towns": "Krynica Morska",
+        "total-gminas": 5,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.11498785018921,
+          54.21457620875587
         ]
       }
     }
