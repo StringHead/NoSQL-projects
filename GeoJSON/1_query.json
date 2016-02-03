@@ -1,0 +1,42 @@
+{
+  "_id": ObjectId("56b1e2d224091d8eaf3b9860"),
+  "type": "Feature",
+  "properties": {
+    "marker-color": "#da994f",
+    "marker-size": "large",
+    "marker-symbol": "town",
+    "city": "Pruszcz Gdañski",
+    "county": "Gdañsk County",
+    "other-towns": "",
+    "total-gminas": 8,
+    "major-corporations": ""
+  },
+  "loc": {
+    "type": "Point",
+    "coordinates": [
+      18.641738891601562,
+      54.25900773295519
+    ]
+  }
+}
+{
+  "_id": ObjectId("56b1e2d224091d8eaf3b985e"),
+  "type": "Feature",
+  "properties": {
+    "marker-color": "#00e3ff",
+    "marker-size": "large",
+    "marker-symbol": "town-hall",
+    "city": "Sopot",
+    "county": "",
+    "other-towns": "",
+    "total-gminas": 1,
+    "major-corporations": "Ergo Hestia"
+  },
+  "loc": {
+    "type": "Point",
+    "coordinates": [
+      18.56865406036377,
+      54.44464149250536
+    ]
+  }
+}
