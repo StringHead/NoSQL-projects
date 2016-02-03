@@ -295,8 +295,5 @@
   > select * from pgsql_movies_ratings order by rating desc, userId asc limit 2;
   ```
 
-  <script src="https://embed.github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Pomerania.geojson"></script>
-
-
 ## GEOJSON
 [geojson](map(geojson.io).geojson)
