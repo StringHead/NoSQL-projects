@@ -1,0 +1,136 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#15a0e3",
+        "marker-size": "large",
+        "marker-symbol": "town-hall",
+        "city": "Gdañsk",
+        "county": "Gdañsk County",
+        "other-towns": "",
+        "total-gminas": 1,
+        "major-corporations": "Energa Gdañsk Power Generator, Ergo Hestia, Gdañsk Repair Yard, GE Capital Bank, Grupa LOTOS, Intel Technology Poland, Elnord, LPP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.654441833496093,
+          54.348002478928194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00e3ff",
+        "marker-size": "large",
+        "marker-symbol": "town-hall",
+        "city": "Sopot",
+        "county": "",
+        "other-towns": "",
+        "total-gminas": 1,
+        "major-corporations": "Ergo Hestia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.56865406036377,
+          54.44464149250536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#da994f",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Pruszcz Gdañski",
+        "county": "Gdañsk County",
+        "other-towns": "",
+        "total-gminas": 8,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.641738891601562,
+          54.25900773295519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#25ae6d",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Kartuzy",
+        "county": "Kartuzy County",
+        "other-towns": "¯ukowo",
+        "total-gminas": 8,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.19735050201416,
+          54.334092527861266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7a523c",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Bytów",
+        "county": "Bytów County",
+        "other-towns": "Miastko",
+        "total-gminas": 10,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.49220848083496,
+          54.16874023292171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.2760009765625,
+              54.154392714598124
+            ],
+            [
+              17.2760009765625,
+              54.44608884604365
+            ],
+            [
+              18.8800048828125,
+              54.44608884604365
+            ],
+            [
+              18.8800048828125,
+              54.154392714598124
+            ],
+            [
+              17.2760009765625,
+              54.154392714598124
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
