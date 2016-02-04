@@ -325,6 +325,7 @@ MongoDB v. 3.2.1
     ```sql
     > db.pomerania.findOne()
     ```
+
     ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/4.db.collection.findOne.PNG "db.collection.findOne")
 
 
@@ -410,6 +411,7 @@ MongoDB v. 3.2.1
   PRUSZCZ GDAŃSKI
   SOPOT
   ```
+
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/6.find_cities_near_gdansk.PNG "find_cities_near_gdansk")
 
   <hr />
