@@ -2,6 +2,7 @@
 ## EDA
 ---
 ### Specyfikacja komputera użytego do obliczeń:
+## ! Wszystkie operacje zostały wykonane na systemie wirtualnym *Linux Ubuntu*, uruchomionym za pomocą *Oracle VirtualBox* !
 
 | **COMPUTER**        |                                                |
 |:-------------------:|------------------------------------------------|
@@ -20,6 +21,16 @@
 | **Storage type**    | *Primary:* SSHD, *Secondary:* HDD              |
 | **Storage size**    | *Primary:* 1TB, *Secondary:* 1TB               |
 | **Operating System**| Windows 10 Professional x64                    |
+
+#### Oracle VM Virtualbox Manager - specyfikacja
+
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/MongoDB%20download%20and%20unzip.PNG "MongoDB - download_and_unzip")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/MongoDB%20download%20and%20unzip.PNG "MongoDB - download_and_unzip")
+
+```
+PostgreSQL v. 9.3.10
+MongoDB v. 3.2.1
+```
 
 <hr />
 
@@ -263,7 +274,7 @@
   > select * from pgsql_movies where title like '%Hobbit%' and title like '%2013%';
   ```
 
-  ![alt text](2.movies_create_table_and_import "psql_query_2")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query2.PNG "psql_query_2")
 
   3. Wyszukanie ocen (*ratings*) w kolekcji **movies_ratings** dla filmu o "movieId" = 106489 i ograniczenie wyświetlanych wyników do 4.
 
@@ -294,7 +305,9 @@
   ```sql
   > select * from pgsql_movies_ratings order by rating desc, userId asc limit 2;
   ```
-  
+
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query7.PNG "psql_query_7")
+
   <hr />
 
 ## GEOJSON
