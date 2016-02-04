@@ -312,7 +312,7 @@ MongoDB v. 3.2.1
 
 ## GEOJSON
 
-  1. Do tego zadania utworzyłem własny zbiór danych, wykorzystując w tym celu narzędzie dostępna na stronie [www.geojson.io](http://geojson.io). Przygotowałem mapę z głównymi miastami w województwie Pomorskim. Dane wyeksportowałem do formatu *JSON* i tak sporządzony zbiór zaimportowałem do MongoDB poleceniem:
+  1. Do tego zadania utworzyłem własny zbiór danych, wykorzystując w tym celu narzędzie dostępna na stronie [www.geojson.io](http://geojson.io). Na podstawie informacji zawartych na angielskiej [wikipedii](https://en.wikipedia.org/wiki/Pomeranian_Voivodeship), przygotowałem mapę z głównymi miastami w województwie Pomorskim. Dane wyeksportowałem do formatu *JSON* i tak sporządzony zbiór zaimportowałem do MongoDB poleceniem:
 
   ```sql
   > time mongoimport -d geojson-io -c pomerania < Pomerania.json
