@@ -320,13 +320,13 @@ MongoDB v. 3.2.1
 
   ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/1.json_import.PNG "json_import")
 
-    * Przykładowy rekord:
+  * Przykładowy rekord:
 
-    ```sql
-    > db.pomerania.findOne()
-    ```
+  ```sql
+  > db.pomerania.findOne()
+  ```
 
-    ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/4.db.collection.findOne.PNG "db.collection.findOne")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/4.db.collection.findOne.PNG "db.collection.findOne")
 
 
   2. Następnie zalogowałem się do *Mongo* i dodałem geo-indeks do kolekcji *pomerania*:
