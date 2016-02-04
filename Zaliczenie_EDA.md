@@ -370,9 +370,7 @@ MongoDB v. 3.2.1
   KWIDZYN
   ```
 
-  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
-
-
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/7.sort_cities_by_distance_from_S%C5%82upsk.png "sort_cities_by_distance_from_Slupsk")
 
   2. Wyszukanie miast które posiadają dokładnie 5 gmin:
 
@@ -386,7 +384,7 @@ MongoDB v. 3.2.1
   SZTUM
   ```
 
-  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+  [MAPA - GEOJSON](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Pomerania_total-gminas_equals_5.geojson)
 
   3. Trzy miasta znajdujące się najbliżej (*near*) Starogardu Gdańskiego
 
@@ -401,7 +399,7 @@ MongoDB v. 3.2.1
   PRUSZCZ GDAŃSKI
   ```
 
-  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+  [MAPA - GEOJSON](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Pomerania_cities_near_Starogard.geojson)
 
   4. Miasta znajdujące się w odległości max. 18 km (*$maxDistance*) od Gdańska (i z jego pominięciem w wynikach *skip(1)*)
 
@@ -412,7 +410,7 @@ MongoDB v. 3.2.1
   PRUSZCZ GDAŃSKI
   SOPOT
   ```
-  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/6.find_cities_near_gdansk.PNG "find_cities_near_gdansk")
 
   <hr />
 
@@ -466,7 +464,7 @@ MongoDB v. 3.2.1
   GDAŃSK
   ```
 
-  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+  [MAPA - GEOJSON](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Pomerania_LineString.geojson)
 
   <hr />
 
@@ -485,7 +483,7 @@ MongoDB v. 3.2.1
   ] ] } } } } )
   ```
 
-  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+  [MAPA - GEOJSON](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Pomerania_cities_rectangle.geojson)
 
   6. Wyszukanie miast posiadających ważniejsze korporacje i posortowanie wyników:
 
@@ -493,7 +491,7 @@ MongoDB v. 3.2.1
   > db.pomerania.find( { "properties.major-corporations" : { "$ne" : "" } } ).sort( { "properties.major-corporations" : 1} )
   ```
 
-  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+  [MAPA - GEOJSON](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Pomerania_find_cities_with_corporations.geojson)
 
 
   <hr />
