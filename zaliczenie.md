@@ -3,7 +3,7 @@
 1. Zaliczenie:
   - [ ] [Neo4j](https://github.com/404.html)
   - [x] [EDA](https://github.com/StringHead/NoSQL-projects/blob/master/Zaliczenie_EDA.md)
-  - [x] [GEOJSON]()
+  - [x] [GEOJSON](https://github.com/StringHead/NoSQL-projects/blob/master/Zaliczenie_EDA.md)
 2. Egazmin:
   - [x] [Aggregation Pipeline](https://github.com/StringHead/NoSQL-projects/blob/master/egzamin.mdl)
   - [ ] [MapReduce](https://github.com/404.html)

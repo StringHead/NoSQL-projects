@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#74a441",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Chojnice",
+        "county": "Chojnice County",
+        "other-towns": "Czersk, Brusy",
+        "total-gminas": 5,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.565507888793945,
+          53.69782443170517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#ffad67",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Lębork",
+        "county": "Lębork County",
+        "other-towns": "Łeba",
+        "total-gminas": 5,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.747254371643066,
+          54.539135955464765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#9073b6",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Nowy Dwór Gdański",
+        "county": "Nowy Dwór Gdański County",
+        "other-towns": "Krynica Morska",
+        "total-gminas": 5,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.11498785018921,
+          54.21457620875587
+        ]
+      }
+    },	
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#a25858",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Sztum",
+        "county": "Sztum County",
+        "other-towns": "Dzierzgoń",
+        "total-gminas": 5,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.030508995056152,
+          53.91970735505101
+        ]
+      }
+    }
+  ]
+}

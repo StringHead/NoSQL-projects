@@ -1,0 +1,172 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#15a0e3",
+        "marker-size": "large",
+        "marker-symbol": "town-hall",
+        "city": "Gdańsk",
+        "county": "Gdańsk County",
+        "other-towns": "",
+        "total-gminas": 1,
+        "major-corporations": "Energa Gdańsk Power Generator, Ergo Hestia, Gdańsk Repair Yard, GE Capital Bank, Grupa LOTOS, Intel Technology Poland, Elnord, LPP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.654441833496093,
+          54.348002478928194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00e3ff",
+        "marker-size": "large",
+        "marker-symbol": "town-hall",
+        "city": "Sopot",
+        "county": "",
+        "other-towns": "",
+        "total-gminas": 1,
+        "major-corporations": "Ergo Hestia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.56865406036377,
+          54.44464149250536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#41e157",
+        "marker-size": "large",
+        "marker-symbol": "town-hall",
+        "city": "Gdynia",
+        "county": "",
+        "other-towns": "",
+        "total-gminas": 1,
+        "major-corporations": "Gdynia Stocznia, Prokom Software"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.539814949035644,
+          54.51639848339953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#4b9953",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Kwidzyn",
+        "county": "Kwidzyn County",
+        "other-towns": "Prabuty",
+        "total-gminas": 6,
+        "major-corporations": "International Paper Kwidzyn, Philips Consumer Electronics"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.931245803833008,
+          53.7333294984464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#d91db8",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Kościerzyna",
+        "county": "Kościerzyna County",
+        "other-towns": "",
+        "total-gminas": 8,
+        "major-corporations": "Lubiana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.978299856185913,
+          54.121319208265106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#e5eb57",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Starogard Gdański",
+        "county": "Starogard Conty",
+        "other-towns": "Skarszewy, Skórcz, Czarna Woda",
+        "total-gminas": 13,
+        "major-corporations": "Polpharma, Destylarnia Sobieski"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.531532287597656,
+          53.96739671749272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#661A00",
+        "stroke-width": 5,
+        "stroke-opacity": 0.8,
+        "fill": "#D60036",
+        "fill-opacity": 0.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.654441833496093,
+              54.348002478928194
+            ],
+            [
+              18.56865406036377,
+              54.44464149250536
+            ],
+            [
+              18.539814949035644,
+              54.51639848339953
+            ],
+            [
+              17.978299856185913,
+              54.121319208265106
+              
+            ],
+            [
+              18.531532287597656,
+              53.96739671749272
+              
+            ],
+            [
+              18.931245803833008,
+              53.7333294984464
+            ],
+            [
+              18.654441833496093,
+              54.348002478928194
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -294,6 +294,8 @@
   ```sql
   > select * from pgsql_movies_ratings order by rating desc, userId asc limit 2;
   ```
+  
+  <hr />
 
 ## GEOJSON
 
@@ -303,14 +305,14 @@
   > time mongoimport -d geojson-io -c pomerania < Pomerania.json
   ```
 
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query6.PNG "psql_query_6")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/1.json_import.PNG "json_import")
 
   * Przykładowy rekord:
 
   ```sql
   > db.pomerania.findOne()
   ```
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query6.PNG "psql_query_6")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/4.db.collection.findOne.PNG "db.collection.findOne")
 
 
   2. Następnie zalogowałem się do *Mongo* i dodałem geo-indeks do kolekcji *pomerania*:
@@ -319,51 +321,91 @@
   > db.pomerania.ensureIndex( { "loc" : "2dsphere" } )
   ```
 
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query6.PNG "psql_query_6")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/GeoJSON/Printscreens/5.add_index_2dsphere.PNG "add_index_2dsphere")
 
 <hr />
 
 ### **MongoDB queries**
 
+#### POINT
+
   1. Miasta posortowane według odległości od Słupska
 
   ```sql
   > var sort = {type: "Point", coordinates: [17.02777862548828,54.464849902391514]}
-  > geojson-io> db.pomerania.find({ loc : {$near: {$geometry: sort}}})
+  > db.pomerania.find({ loc : {$near: {$geometry: sort}}})
+
+  #RESULT
+  SŁUPSK
+  BYTÓW
+  LĘBORK
+  KOŚCIERZYNA
+  KARTUZY
+  WEJHEROWO
+  CZŁUCHÓW
+  CHOJNICE
+  PUCK
+  GDYNIA
+  SOPOT
+  GDAŃSK
+  PRUSZCZ GDAŃSKI
+  STAROGARD GDAŃSKI
+  TCZEW
+  NOWY DWÓR GDAŃSKI
+  MALBORK
+  SZTUM
+  KWIDZYN
   ```
 
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query6.PNG "psql_query_6")
+  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
 
-  2. Miasta znajdujące się wewnątrz utworzonego prostokątu o podanych koordynatach (*coordinates*)
+
+
+  2. Wyszukanie miast które posiadają dokładnie 5 gmin:
 
   ```sql
-  > db.pomerania.find( {loc: { $geoWithin: { $geometry: { type: "Polygon", coordinates: [
-    [
-      [ 17.2760009765625, 54.154392714598124 ],
-      [ 17.2760009765625, 54.44608884604365 ],
-      [ 18.8800048828125, 54.44608884604365 ],
-      [ 18.8800048828125, 54.154392714598124 ],
-      [ 17.2760009765625, 54.154392714598124 ]
-    ] ] } } } } )
+  > db.pomerania.find( { "properties.total-gminas": 5 })
+
+  #RESULT
+  CHOJNICE
+  LĘBORK
+  NOWY DWÓR GDAŃSKI
+  SZTUM
   ```
 
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/postrgresql/3.query6.PNG "psql_query_6")
+  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
 
   3. Trzy miasta znajdujące się najbliżej (*near*) Starogardu Gdańskiego
 
   ```sql
   > var Starogard = { "type": "Point", "coordinates":[ 18.531532287597656, 53.96739671749272] }
+  > db.pomerania.find({ loc: {$near: {$geometry: Starogard}} }).limit(4)
 
-  > db.pomerania.find({ loc: {$near: {$geometry: Starogard}} }).limit(3).skip(1)
+  #RESULT
+  STAROGARD GDAŃSKI
+  TCZEW
+  SZTUM
+  PRUSZCZ GDAŃSKI
   ```
+
+  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
 
   4. Miasta znajdujące się w odległości max. 18 km (*$maxDistance*) od Gdańska (i z jego pominięciem w wynikach *skip(1)*)
 
   ```sql
-  > db.pomerania.find( { loc : { $near : { $ geometry : { type : "Point", coordinates : [18.654441833496094, 54.348002478928194] }, $maxDistance : 18000 } } } ).skip(1)
+  db.pomerania.find( { loc : { $near : { $geometry : { type : "Point", coordinates : [18.654441833496094, 54.348002478928194] }, $maxDistance : 18000 } } } ).skip(1)
 
-  > db.pomerania.find({ loc: {$near: {$geometry: Starogard}} }).limit(3).skip(1)
+  #RESULT
+  PRUSZCZ GDAŃSKI
+  SOPOT
   ```
+  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+
+  <hr />
+
+#### LINESTRING
+
+  5. Wyszukanie ścieżki na mapie, na podstawie podanych koordynatów:
 
   ```sql
   db.pomerania.find( { loc : { $geoIntersects: { $geometry : { type: "LineString", coordinates: [
@@ -386,8 +428,59 @@
 	 [ 18.798980712890625, 54.08658310546472 ],
 	 [ 19.11498785018921, 54.21457620875587 ],
 	 [ 18.641738891601562, 54.25900773295519 ],
-	 [ 18.654441833496093, 54.348002478928194 ]
-  ] } } } } )
+	 [ 18.654441833496093, 54.348002478928194 ] ] } } } } )
+
+  #RESULT
+  GDAŃSK
+  SOPOT
+  GDYNIA
+  PUCK
+  WEJHEROWO
+  LĘBORK
+  SŁUPSK
+  CZŁUCHÓW
+  CHOJNICE
+  BYTÓW
+  KOŚCIERZYNA
+  KARTUZY
+  STAROGARD GDAŃSKI
+  KWIDZYN
+  SZTUM
+  MALBORK
+  TCZEW
+  NOWY DWÓR GDAŃSKI
+  PRUSZCZ GDAŃSKI
+  GDAŃSK
   ```
 
-[geojson](map(geojson.io).geojson)
+  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+
+  <hr />
+
+#### POLYGON
+
+5. Miasta znajdujące się wewnątrz utworzonego prostokątu o podanych koordynatach (*coordinates*)
+
+  ```sql
+  > db.pomerania.find( {loc: { $geoWithin: { $geometry: { type: "Polygon", coordinates: [
+    [
+    [ 17.2760009765625, 54.154392714598124 ],
+    [ 17.2760009765625, 54.44608884604365 ],
+    [ 18.8800048828125, 54.44608884604365 ],
+    [ 18.8800048828125, 54.154392714598124 ],
+    [ 17.2760009765625, 54.154392714598124 ]
+  ] ] } } } } )
+  ```
+
+  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+
+  6. Wyszukanie miast posiadających ważniejsze korporacje i posortowanie wyników:
+
+  ```sql
+  > db.pomerania.find( { "properties.major-corporations" : { "$ne" : "" } } ).sort( { "properties.major-corporations" : 1} )
+  ```
+
+  [MAPA - GEOJSON](https://www.noppanit.com/merge-documents-two-collections-together-mongodb/)
+
+
+  <hr />

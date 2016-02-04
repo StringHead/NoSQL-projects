@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#805099",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Tczew",
+        "county": "Tczew County",
+        "other-towns": "Pelplin, Gniew",
+        "total-gminas": 6,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.798980712890625,
+          54.08658310546472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#a25858",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Sztum",
+        "county": "Sztum County",
+        "other-towns": "Dzierzgoń",
+        "total-gminas": 5,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.030508995056152,
+          53.91970735505101
+        ]
+      }
+    },
+	{
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#da994f",
+        "marker-size": "large",
+        "marker-symbol": "town",
+        "city": "Pruszcz Gdański",
+        "county": "Gdańsk County",
+        "other-towns": "",
+        "total-gminas": 8,
+        "major-corporations": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.641738891601562,
+          54.25900773295519
+        ]
+      }
+    }
+  ]
+}
