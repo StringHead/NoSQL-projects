@@ -24,8 +24,8 @@
 
 #### Oracle VM Virtualbox Manager - specyfikacja
 
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/MongoDB%20download%20and%20unzip.PNG "MongoDB - download_and_unzip")
-  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/Reddit/MongoDB%20download%20and%20unzip.PNG "MongoDB - download_and_unzip")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/system-prntscrn/Oracle_VM_VirtualBox_Manager.PNG "Oracle_VM_VirtualBox_Manager")
+  ![alt text](https://github.com/StringHead/NoSQL-projects/blob/master/Printscreens/system-prntscrn/Oracle_VM_VirtualBox_Version.PNG "Oracle_VM_VirtualBox_Version")
 
 ```
 PostgreSQL v. 9.3.10
