@@ -470,7 +470,7 @@ MongoDB v. 3.2.1
 
 #### POLYGON
 
-5. Miasta znajdujące się wewnątrz utworzonego prostokątu o podanych koordynatach (*coordinates*)
+  5. Miasta znajdujące się wewnątrz utworzonego prostokątu o podanych koordynatach (*coordinates*)
 
   ```sql
   > db.pomerania.find( {loc: { $geoWithin: { $geometry: { type: "Polygon", coordinates: [
